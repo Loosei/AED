@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Algoritmo Dijkstra funciona apenas com distâncias positivas
+// Algoritmo Dijkstra funciona apenas com distâncias positivas.
 
 class Package
 {
@@ -33,7 +33,6 @@ class HashTable
 {
 private:
     unordered_map<char, Package> table;
-
 public:
     void insert(const Package &pkg)
     {
