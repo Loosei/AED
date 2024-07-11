@@ -101,14 +101,6 @@ int distanciaMinima(int distancia[], bool foiVisitado[], int nNodes)
     return index; // Retornamos esse índice para saber em que índice estamos na função DijkstraAlgo
 }
 
-void printPath(int parent[], int j)
-{
-    if (parent[j] == -1)
-        return;
-
-    printPath(parent, parent[j]);
-    cout << " -> " << char(j + 65);
-}
 
 void DijkstraAlgo(int **graph, int src, int nNodes)
 {
@@ -162,6 +154,14 @@ void DijkstraAlgo(int **graph, int src, int nNodes)
             cout << endl;
         }
     }
+}
+void printPath(int parent[], int j)
+{
+    if (parent[j] == -1)
+        return;
+
+    printPath(parent, parent[j]);
+    cout << " -> " << char(j + 65);
 }
 
 void addNode(int **&graph, int &nNodes) {
