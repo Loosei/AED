@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Algoritmo Dijkstra funciona apenas com distâncias positivas
+// Algoritmo Dijkstra funciona apenas com distâncias positivas.
 
 class Package
 {
